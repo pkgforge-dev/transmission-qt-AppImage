@@ -67,7 +67,7 @@ UPINFO="gh-releases-zsync|$(echo $GITHUB_REPOSITORY | tr '/' '|')|latest|*$ARCH.
 ./pelf --add-appdir ./AppDir \
 	--appimage-compat                         \
 	--add-updinfo "$UPINFO"                   \
-	--appbundle-id="Transmission-Qt-$VERSION" \
+	--appbundle-id="com.transmissionbt.Transmission#github.com/$GITHUB_REPOSITORY:$VERSION@$(date +%d_%m_%Y)" \
 	--compression "-C zstd:level=22 -S26 -B8" \
 	--output-to Transmission-Qt-"$VERSION"-anylinux-"$ARCH".dwfs.AppBundle
 
