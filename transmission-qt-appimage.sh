@@ -35,7 +35,7 @@ chmod +x ./uruntime2appimage
 ./uruntime2appimage
 
 # make appbundle
-wget ---retry-connrefused --tries=30 "$PELF" -O ./pelf
+wget --retry-connrefused --tries=30 "$PELF" -O ./pelf
 chmod +x ./pelf
 echo "Generating [dwfs]AppBundle..."
 UPINFO="gh-releases-zsync|$(echo $GITHUB_REPOSITORY | tr '/' '|')|latest|*$ARCH.dwfs.AppBundle.zsync"
