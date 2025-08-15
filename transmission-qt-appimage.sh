@@ -19,7 +19,7 @@ export OUTNAME=Transmission-Qt-"$VERSION"-anylinux-"$ARCH".AppImage
 # Deploy dependencies
 wget --retry-connrefused --tries=30 "$SHARUN" -O ./quick-sharun
 chmod +x ./quick-sharun
-./quick-sharun /usr/bin/transmission-qt /usr/lib/qt6/plugins/tls/*
+./quick-sharun /usr/bin/transmission-qt
 
 # MAKE APPIMAGE WITH URUNTIME
 wget --retry-connrefused --tries=30 "$URUNTIME" -O ./uruntime2appimage
