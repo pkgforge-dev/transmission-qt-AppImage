@@ -4,7 +4,7 @@ set -eux
 
 ARCH="$(uname -m)"
 URUNTIME="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/refs/heads/main/useful-tools/uruntime2appimage.sh"
-SHARUN="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/refs/heads/main/useful-tools/quick-sharun.sh"
+SHARUN="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/refs/heads/qml/useful-tools/quick-sharun.sh"
 
 VERSION="$(pacman -Q transmission-qt | awk '{print $2; exit}')"
 echo "$VERSION" > ~/version
