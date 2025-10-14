@@ -5,9 +5,7 @@ set -eux
 ARCH="$(uname -m)"
 URUNTIME="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/refs/heads/main/useful-tools/uruntime2appimage.sh"
 SHARUN="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/refs/heads/main/useful-tools/quick-sharun.sh"
-
-VERSION="$(pacman -Q transmission-qt | awk '{print $2; exit}')"
-echo "$VERSION" > ~/version
+VERSION="$(cat ~/version)"
 
 export ADD_HOOKS="self-updater.bg.hook"
 # The arch package does not have icon lol
