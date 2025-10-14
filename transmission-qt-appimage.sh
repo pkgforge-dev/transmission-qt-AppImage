@@ -41,4 +41,9 @@ UPINFO="$(echo "$UPINFO" | sed 's#.AppImage.zsync#*.AppBundle.zsync#g')"
 echo "Generating zsync file..."
 zsyncmake *.AppBundle -u *.AppBundle
 
+mkdir -p ./dist
+mv -v ./*.AppImage*  ./dist
+mv -v ./*.AppBundle* ./dist
+mv -v ~/version      ./dist
+
 echo "All Done!"
