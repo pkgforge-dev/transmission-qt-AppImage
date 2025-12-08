@@ -21,7 +21,6 @@ pacman -Syu --noconfirm \
 	pulseaudio       \
 	pulseaudio-alsa  \
 	qt6ct            \
-	qt6-wayland      \
 	transmission-qt  \
 	wget             \
 	xorg-server-xvfb \
