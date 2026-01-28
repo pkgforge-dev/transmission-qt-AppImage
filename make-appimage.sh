@@ -12,7 +12,7 @@ export ICON=https://raw.githubusercontent.com/transmission/transmission/refs/hea
 export DESKTOP=/usr/share/applications/transmission-qt.desktop
 
 # Deploy dependencies
-quick-sharun /usr/bin/transmission /usr/share/transmission
+quick-sharun /usr/bin/transmission* /usr/share/transmission
 
 # Additional changes can be done in between here
 
